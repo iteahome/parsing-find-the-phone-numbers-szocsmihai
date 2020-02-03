@@ -1,0 +1,9 @@
+Because the assignment was not explicit enough, I present you 2 variants of the solution:
+
+1. The phone number simply exists within the given text (3 matches):
+
+\(?07\d{2}\)?(-|..)\d{3}(-|..)?\d{3}
+
+2. The phone number exists as a separate entity in the given text (i.e. it is wrapped in non-alphanumeric characters like whitespace, so it can be read separately at a glance) and its existance is not a coincidence (1 match):
+
+\b\(?07\d{2}\)?(-|..)\d{3}(-|..)?\d{3}\b
